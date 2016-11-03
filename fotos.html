@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Feria de Matemáticas Oaxaca 2015</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/theme.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $('#slider div:gt(0)').hide();
+      setInterval(function(){
+        $('#slider div:first-child').fadeOut(0)
+         .next('div').fadeIn(500)
+         .end().appendTo('#slider');}, 4000);
+    });
+  </script>
+  <style type="text/css">
+  #slider { 
+position: relative;
+overflow: hidden;
+width: 1000px; 
+height: 500px; 
+border:0px solid #333;
+border-radius: 40px;
+margin: 0 auto;
+padding: 0;
+}</style>
+</head>
+
+<body >
+    <div id="logo">
+    <img src="img/feria.png">        
+   </div>
+   <div id="dode">
+     <img src="img/dode.png" width="80px" height="80px">   
+   </div>
+
+    <!--menu-->
+    <div class="horizontal">
+        <ul>
+         <li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="taller.html">Talleres</a></li>
+            <li><a href="js/Folleto.pdf">Folleto</a></li>
+            <li><a href="js/Poster.pdf">Poster</a></li>
+            <li><a href="js/horario.pdf">Horario</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+        </ul>
+    </div>
+    <!--contenido -->
+    <div id="content">
+        <!--FAQ-->
+ 
+        <!--seleccion-->
+        <div id="slider">
+    <div><img src="img/img1.jpg"/></div>
+    <div><img src="img/img2.jpg"/></div>
+    <div><img src="img/img3.jpg"/></div>
+    <div><img src="img/img4.jpg"/></div>
+    <div><img src="img/img5.jpg"/></div>
+      </div>
+       
+
+    </div>
+
+<!--pie de pagina-->
+   <div id="footer">
+        Todos los derechos reservados
+   </div>
+
+</body>
+</html>
